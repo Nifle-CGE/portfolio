@@ -1,15 +1,17 @@
 <script lang="ts">
 	import avatar from '$lib/assets/img/avatar.png';
 	import bg2 from '$lib/assets/img/bg2.png';
+	import bg4 from '$lib/assets/img/bg4.png';
 </script>
 
-<h2 class="flex justify-center text-2xl">Bienvenue sur mon Portfolio</h2>
-<div class="flex justify-center pt-6">
-	<div class="rounded-4xl bg-cover bg-center" style="background-image: url({bg2});">
+<div class="flex flex-col items-center gap-6">
+	<h2 class="text-2xl">Bienvenue sur mon Portfolio</h2>
+
+	<div class="rounded-3xl bg-cover bg-center" style="background-image: url({bg2});">
 		<div
-			class="card rounded-4xl border-primary bg-cover bg-center shadow-xl backdrop-brightness-20 transition duration-500 card-border hover:backdrop-brightness-30"
+			class="card rounded-3xl border-primary shadow-xl backdrop-brightness-20 transition duration-500 card-border hover:backdrop-brightness-30"
 		>
-			<div class="card-body flex flex-row gap-9 px-10">
+			<div class="card-body flex flex-row gap-9 px-10 text-primary-content">
 				<div class="hover-3d">
 					<div class="hexagon avatar">
 						<div class="w-64">
@@ -26,12 +28,14 @@
 					<div></div>
 					<div></div>
 				</div>
+
 				<div>
 					<h1 class="card-title pb-10 font-grotesk text-5xl font-medium">
 						Elfin Pouget - - Pejoan
 					</h1>
-					<div class="font-inter">
-						<div class="flex pb-4">
+
+					<div class="flex flex-col gap-4 font-inter">
+						<div class="flex">
 							<svg
 								viewBox="0 0 24 24"
 								fill="none"
@@ -54,7 +58,8 @@
 								> à Toulouse
 							</p>
 						</div>
-						<div class="flex pb-4">
+
+						<div class="flex">
 							<svg
 								viewBox="0 0 24 24"
 								fill="none"
@@ -76,6 +81,7 @@
 								>, filiale de <a class="link" href="https://sogeclair.com">Sogeclair</a>
 							</p>
 						</div>
+
 						<div class="flex">
 							<svg
 								viewBox="0 0 24 24"
@@ -98,9 +104,95 @@
 									stroke-linejoin="round"
 								/>
 							</svg>
+
 							<p class="text-xl">Passionné par le numerique, les jeux videos et l'impression 3D</p>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex gap-6 text-secondary-content lg:flex-row">
+		<div class="rounded-2xl bg-size-(--page-width) bg-left" style="background-image: url({bg4});">
+			<div
+				class="card h-full rounded-2xl border-secondary backdrop-brightness-25 transition duration-500 card-border hover:backdrop-brightness-35"
+			>
+				<div class="card-body">
+					<svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M11.5 5H11.9344C14.9816 5 16.5053 5 17.0836 5.54729C17.5836 6.02037 17.8051 6.71728 17.6702 7.39221C17.514 8.17302 16.2701 9.05285 13.7823 10.8125L9.71772 13.6875C7.2299 15.4471 5.98599 16.327 5.82984 17.1078C5.69486 17.7827 5.91642 18.4796 6.41636 18.9527C6.99474 19.5 8.51836 19.5 11.5656 19.5H12.5M8 5C8 6.65685 6.65685 8 5 8C3.34315 8 2 6.65685 2 5C2 3.34315 3.34315 2 5 2C6.65685 2 8 3.34315 8 5ZM22 19C22 20.6569 20.6569 22 19 22C17.3431 22 16 20.6569 16 19C16 17.3431 17.3431 16 19 16C20.6569 16 22 17.3431 22 19Z"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+					<div class="card-title font-grotesk text-2xl">Parcours</div>
+					<p class="font-inter text-lg">
+						Une timeline de ma scolarité et de mes experiences professionelles vous attends derrière
+						ce <a
+							href="/career"
+							class="btn border-secondary-content bg-transparent shadow-xs shadow-secondary-content transition hover:scale-105"
+							>bouton</a
+						>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="rounded-2xl bg-size-(--page-width) bg-center" style="background-image: url({bg4});">
+			<div
+				class="card h-full rounded-2xl border-secondary backdrop-brightness-25 transition duration-500 card-border hover:backdrop-brightness-35"
+			>
+				<div class="card-body">
+					<svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M13 7L11.8845 4.76892C11.5634 4.1268 11.4029 3.80573 11.1634 3.57116C10.9516 3.36373 10.6963 3.20597 10.4161 3.10931C10.0992 3 9.74021 3 9.02229 3H5.2C4.0799 3 3.51984 3 3.09202 3.21799C2.71569 3.40973 2.40973 3.71569 2.21799 4.09202C2 4.51984 2 5.0799 2 6.2V7M2 7H17.2C18.8802 7 19.7202 7 20.362 7.32698C20.9265 7.6146 21.3854 8.07354 21.673 8.63803C22 9.27976 22 10.1198 22 11.8V16.2C22 17.8802 22 18.7202 21.673 19.362C21.3854 19.9265 20.9265 20.3854 20.362 20.673C19.7202 21 18.8802 21 17.2 21H6.8C5.11984 21 4.27976 21 3.63803 20.673C3.07354 20.3854 2.6146 19.9265 2.32698 19.362C2 18.7202 2 17.8802 2 16.2V7ZM14 16.5L16.5 14L14 11.5M10 11.5L7.5 14L10 16.5"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+					<div class="card-title font-grotesk text-2xl">Projets</div>
+					<p class="font-inter text-lg">
+						Vous trouverez une liste non exaustive des projets que j'ai réalisé ou auxquels j'ai
+						participé en suivant ce <a class="link hover:animate-rainbow" href="/projects">lien</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="rounded-2xl bg-size-(--page-width) bg-right" style="background-image: url({bg4});">
+			<div
+				class="card h-full rounded-2xl border-secondary backdrop-brightness-25 transition duration-500 card-border hover:backdrop-brightness-35"
+			>
+				<div class="card-body">
+					<a
+						href="/skills"
+						aria-label="Skills"
+						title="Skills"
+						class="h-min w-min transition duration-500 hover:scale-90 hover:rotate-180"
+					>
+						<svg
+							class="h-10 w-10"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M9 2V4M15 2V4M9 20V22M15 20V22M20 9H22M20 14H22M2 9H4M2 14H4M8.8 20H15.2C16.8802 20 17.7202 20 18.362 19.673C18.9265 19.3854 19.3854 18.9265 19.673 18.362C20 17.7202 20 16.8802 20 15.2V8.8C20 7.11984 20 6.27976 19.673 5.63803C19.3854 5.07354 18.9265 4.6146 18.362 4.32698C17.7202 4 16.8802 4 15.2 4H8.8C7.11984 4 6.27976 4 5.63803 4.32698C5.07354 4.6146 4.6146 5.07354 4.32698 5.63803C4 6.27976 4 7.11984 4 8.8V15.2C4 16.8802 4 17.7202 4.32698 18.362C4.6146 18.9265 5.07354 19.3854 5.63803 19.673C6.27976 20 7.11984 20 8.8 20ZM10.6 15H13.4C13.9601 15 14.2401 15 14.454 14.891C14.6422 14.7951 14.7951 14.6422 14.891 14.454C15 14.2401 15 13.9601 15 13.4V10.6C15 10.0399 15 9.75992 14.891 9.54601C14.7951 9.35785 14.6422 9.20487 14.454 9.10899C14.2401 9 13.9601 9 13.4 9H10.6C10.0399 9 9.75992 9 9.54601 9.10899C9.35785 9.20487 9.20487 9.35785 9.10899 9.54601C9 9.75992 9 10.0399 9 10.6V13.4C9 13.9601 9 14.2401 9.10899 14.454C9.20487 14.6422 9.35785 14.7951 9.54601 14.891C9.75992 15 10.0399 15 10.6 15Z"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</a>
+					<a href="/skills" class="card-title font-grotesk text-2xl">Compétences</a>
+					<p class="font-inter text-lg">
+						En appuyant sur l'icône ou le titre ci-dessus, vous serez redirigé vers mes compétences
+						techniques et humaines.
+					</p>
 				</div>
 			</div>
 		</div>

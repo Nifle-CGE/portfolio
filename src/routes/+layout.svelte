@@ -15,7 +15,7 @@
 <div class="flex min-h-dvh flex-col">
 	<div class="sticky top-4 z-50 flex justify-center px-4">
 		<div
-			class="navbar w-full max-w-[1100px] rounded-xl bg-cover bg-bottom text-black shadow-md"
+			class="navbar w-full max-w-(--page-width) rounded-xl bg-cover bg-bottom text-black shadow-md"
 			style="background-image: url({bg0});"
 		>
 			<div class="navbar-start">
@@ -26,7 +26,7 @@
 					<li><a href="/" class="hover:backdrop-blur-sm">Accueil</a></li>
 					<li><a href="/career" class="hover:backdrop-blur-sm">Parcours</a></li>
 					<li><a href="/projects" class="hover:backdrop-blur-sm">Projets</a></li>
-					<li><a href="/skills" class="hover:backdrop-blur-sm">Competences</a></li>
+					<li><a href="/skills" class="hover:backdrop-blur-sm">Compétences</a></li>
 					<li><a href="/cv" class="hover:backdrop-blur-sm">Mon CV</a></li>
 					<li><a href="/contact" class="hover:backdrop-blur-sm">Contact</a></li>
 				</ul>
@@ -35,7 +35,7 @@
 	</div>
 
 	<div class="flex grow justify-center px-4 py-10">
-		<div class="w-full max-w-[1100px]">
+		<div class="w-full max-w-(--page-width)">
 			{@render children()}
 		</div>
 	</div>

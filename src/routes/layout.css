@@ -8,15 +8,89 @@
 @plugin "daisyui";
 
 @theme {
-    --font-sans: DM-Sans-Variable, sans-serif;
-    --font-grotesk: ClashGrotesk-Variable, sans-serif;
-    --font-dm-sans: DM-Sans-Variable, sans-serif;
-    --font-inter: Inter-Regular, sans-serif;
-    --font-merriweather: Merriweather-Regular, serif;
-    --font-oxygen-mono: OxygenMono-Regular, monospace;
+	--page-width: 1100px;
+
+	--font-sans: DM-Sans-Variable, sans-serif;
+	--font-grotesk: ClashGrotesk-Variable, sans-serif;
+	--font-dm-sans: DM-Sans-Variable, sans-serif;
+	--font-inter: Inter-Regular, sans-serif;
+	--font-merriweather: Merriweather-Regular, serif;
+	--font-oxygen-mono: OxygenMono-Regular, monospace;
+
+	--animate-rainbow: rainbow 1s linear infinite;
 }
 
 .hexagon {
-    -webkit-clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
-    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+	-webkit-clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+	clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+}
+
+@keyframes rainbow {
+	0% {
+		color: var(--color-red-700);
+	}
+
+	6% {
+		color: var(--color-orange-700);
+	}
+
+	12% {
+		color: var(--color-amber-700);
+	}
+
+	18% {
+		color: var(--color-yellow-700);
+	}
+
+	24% {
+		color: var(--color-lime-700);
+	}
+
+	30% {
+		color: var(--color-green-700);
+	}
+
+	36% {
+		color: var(--color-emerald-700);
+	}
+
+	42% {
+		color: var(--color-teal-700);
+	}
+
+	48% {
+		color: var(--color-cyan-700);
+	}
+
+	54% {
+		color: var(--color-sky-700);
+	}
+
+	60% {
+		color: var(--color-blue-700);
+	}
+
+	66% {
+		color: var(--color-indigo-700);
+	}
+
+	72% {
+		color: var(--color-violet-700);
+	}
+
+	78% {
+		color: var(--color-purple-700);
+	}
+
+	84% {
+		color: var(--color-fuchsia-700);
+	}
+
+	90% {
+		color: var(--color-pink-700);
+	}
+
+	100% {
+		color: var(--color-rose-700);
+	}
 }
