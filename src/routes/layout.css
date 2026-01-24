@@ -1,1 +1,4 @@
+@import url('$lib/clash-grotesk.css');
+
 @import 'tailwindcss';
+@plugin "daisyui";
