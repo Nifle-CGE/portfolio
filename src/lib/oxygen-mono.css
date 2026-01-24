@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'OxygenMono-Regular';
+    src: url('$lib/assets/fonts/Oxygen_Mono/OxygenMono-Regular.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}

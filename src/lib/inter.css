@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Inter-Variable';
+    src: url('$lib/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
