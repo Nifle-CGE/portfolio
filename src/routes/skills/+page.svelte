@@ -1,4 +1,4 @@
-<h2 class="text-xl">Competences</h2>
+<h2 class="font-grotesk text-3xl font-semibold">Mes Competences</h2>
 
 <h3 class="text-lg">Réaliser</h3>
 <h3 class="text-lg">Optimiser</h3>
