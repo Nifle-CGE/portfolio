@@ -7,14 +7,14 @@
 <div class="flex flex-col items-center gap-6">
 	<h2 class="text-2xl">Bienvenue sur mon Portfolio</h2>
 
-	<div class="rounded-3xl bg-cover bg-center" style="background-image: url({bg2});">
+	<div class="rounded-3xl bg-cover bg-center" style="background-image: url({bg4});">
 		<div
 			class="card rounded-3xl border-primary shadow-xl backdrop-brightness-20 transition duration-500 card-border hover:backdrop-brightness-30"
 		>
-			<div class="card-body flex flex-row gap-9 px-10 text-primary-content">
+			<div class="card-body flex flex-col gap-9 text-primary-content lg:flex-row lg:px-10">
 				<div class="hover-3d">
-					<div class="hexagon avatar">
-						<div class="w-64">
+					<div class="hexagon avatar h-min w-min">
+						<div class="h-64 w-64">
 							<img src={avatar} alt="Elfin Pouget - - Pejoan" />
 						</div>
 					</div>
@@ -113,8 +113,8 @@
 		</div>
 	</div>
 
-	<div class="flex gap-6 text-secondary-content lg:flex-row">
-		<div class="rounded-2xl bg-size-(--page-width) bg-left" style="background-image: url({bg4});">
+	<div class="flex flex-col gap-6 text-secondary-content lg:flex-row">
+		<div class="rounded-2xl bg-size-(--page-width) bg-left" style="background-image: url({bg2});">
 			<div
 				class="card h-full rounded-2xl border-secondary backdrop-brightness-25 transition duration-500 card-border hover:backdrop-brightness-35"
 			>
@@ -140,7 +140,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="rounded-2xl bg-size-(--page-width) bg-center" style="background-image: url({bg4});">
+		<div class="rounded-2xl bg-size-(--page-width) bg-center" style="background-image: url({bg2});">
 			<div
 				class="card h-full rounded-2xl border-secondary backdrop-brightness-25 transition duration-500 card-border hover:backdrop-brightness-35"
 			>
@@ -157,12 +157,14 @@
 					<div class="card-title font-grotesk text-2xl">Projets</div>
 					<p class="font-inter text-lg">
 						Vous trouverez une liste non exaustive des projets que j'ai réalisé ou auxquels j'ai
-						participé en suivant ce <a class="link hover:animate-rainbow" href="/projects">lien</a>.
+						participé en suivant ce <a class="link font-bold hover:animate-rainbow" href="/projects"
+							>lien</a
+						>.
 					</p>
 				</div>
 			</div>
 		</div>
-		<div class="rounded-2xl bg-size-(--page-width) bg-right" style="background-image: url({bg4});">
+		<div class="rounded-2xl bg-size-(--page-width) bg-right" style="background-image: url({bg2});">
 			<div
 				class="card h-full rounded-2xl border-secondary backdrop-brightness-25 transition duration-500 card-border hover:backdrop-brightness-35"
 			>
@@ -188,10 +190,10 @@
 							/>
 						</svg>
 					</a>
-					<a href="/skills" class="card-title font-grotesk text-2xl">Compétences</a>
+					<div class="card-title font-grotesk text-2xl">Compétences</div>
 					<p class="font-inter text-lg">
-						En appuyant sur l'icône ou le titre ci-dessus, vous serez redirigé vers mes compétences
-						techniques et humaines.
+						En appuyant sur l'<bold class="font-bold">icône ci-dessus</bold>, vous serez redirigé
+						vers mes compétences techniques et humaines.
 					</p>
 				</div>
 			</div>

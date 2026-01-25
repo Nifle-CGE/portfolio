@@ -1,5 +1,8 @@
 <script lang="ts">
 	import './layout.css';
+
+	import NavLink from '$lib/components/NavLink.svelte';
+
 	import favicon from '$lib/assets/img/icons/favicon.png';
 	import nifle_logo from '$lib/assets/img/icons/logo_nifle_transparent.png';
 	import bg0 from '$lib/assets/img/bg0.png';
@@ -23,12 +26,27 @@
 			</div>
 			<div class="navbar-end">
 				<ul class="menu menu-horizontal hidden px-1 lg:flex">
-					<li><a href="/" class="hover:backdrop-blur-sm">Accueil</a></li>
-					<li><a href="/career" class="hover:backdrop-blur-sm">Parcours</a></li>
-					<li><a href="/projects" class="hover:backdrop-blur-sm">Projets</a></li>
-					<li><a href="/skills" class="hover:backdrop-blur-sm">Compétences</a></li>
-					<li><a href="/cv" class="hover:backdrop-blur-sm">Mon CV</a></li>
-					<li><a href="/contact" class="hover:backdrop-blur-sm">Contact</a></li>
+					<li><NavLink href="/" exact={true}>Accueil</NavLink></li>
+					<li><NavLink href="/career">Parcours</NavLink></li>
+					<li><NavLink href="/projects">Projets</NavLink></li>
+					<li><NavLink href="/skills">Compétences</NavLink></li>
+					<li><NavLink href="/cv">Mon CV</NavLink></li>
+					<li><NavLink href="/contact">Contact</NavLink></li>
+				</ul>
+				<ul class="menu menu-horizontal px-1 lg:hidden">
+					<li>
+						<details>
+							<summary>Menu</summary>
+							<ul class="m-0 bg-base-200 text-base-content right-0">
+								<li><NavLink href="/" exact={true}>Accueil</NavLink></li>
+								<li><NavLink href="/career">Parcours</NavLink></li>
+								<li><NavLink href="/projects">Projets</NavLink></li>
+								<li><NavLink href="/skills">Compétences</NavLink></li>
+								<li><NavLink href="/cv">Mon CV</NavLink></li>
+								<li><NavLink href="/contact">Contact</NavLink></li>
+							</ul>
+						</details>
+					</li>
 				</ul>
 			</div>
 		</div>
