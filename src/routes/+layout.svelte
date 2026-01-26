@@ -53,7 +53,7 @@
 	</div>
 
 	<div class="flex grow justify-center px-4 py-10">
-		<div class="w-full max-w-(--page-width)">
+		<div class="w-full flex flex-col max-w-(--page-width)">
 			{@render children()}
 		</div>
 	</div>

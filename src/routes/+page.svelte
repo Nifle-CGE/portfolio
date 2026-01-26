@@ -34,7 +34,7 @@
 						Elfin Pouget - - Pejoan
 					</h1>
 
-					<div class="flex flex-col gap-4 font-inter">
+					<div class="space-y-4 font-inter">
 						<div class="flex">
 							<svg
 								viewBox="0 0 24 24"

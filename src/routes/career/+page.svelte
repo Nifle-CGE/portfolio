@@ -18,9 +18,9 @@
 					/>
 				</svg>
 			</div>
-			<div class="timeline-end flex flex-col gap-2 font-inter text-sm text-neutral-content">
-				<div class="flex flex-col gap-2 timeline-box bg-base-200">
-					<p class="text-lg text-primary-content">Alternance</p>
+			<div class="timeline-end space-y-2 font-inter text-sm text-neutral-content">
+				<div class="space-y-2 timeline-box bg-base-200">
+					<p class="text-lg text-primary-content font-semibold">Alternance</p>
 					<p class="text-base text-secondary-content">
 						a <a class="link" href="https://sogeclair.com/simulation/simulation-ferroviaire"
 							>Oktal</a
@@ -46,8 +46,8 @@
 						<span class="badge px-2 badge-md badge-accent">WebSockets</span>
 					</div>
 				</div>
-				<div class="flex flex-col gap-2 timeline-box bg-base-200">
-					<p class="text-lg text-primary-content">Troisieme annee de BUT Informatique</p>
+				<div class="space-y-2 timeline-box bg-base-200">
+					<p class="text-lg text-primary-content font-semibold">Troisieme annee de BUT Informatique</p>
 					<p class="text-base text-secondary-content">
 						a l'<a class="link" href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
 							>IUT Paul Sabatier</a
@@ -88,9 +88,9 @@
 				</svg>
 			</div>
 			<div
-				class="timeline-end flex flex-col gap-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
+				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg text-primary-content">Stage de fin d'annee de BUT2</p>
+				<p class="text-lg text-primary-content font-semibold">Stage de fin d'annee de BUT2</p>
 				<p class="text-base text-secondary-content">
 					a <a class="link" href="https://sogeclair.com/simulation/simulation-ferroviaire">Oktal</a
 					>, filiale de <a class="link" href="https://sogeclair.com">Sogeclair</a>, Blagnac
@@ -137,9 +137,9 @@
 				</svg>
 			</div>
 			<div
-				class="timeline-end flex flex-col gap-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
+				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg text-primary-content">Deuxieme annee de BUT Informatique</p>
+				<p class="text-lg text-primary-content font-semibold">Deuxieme annee de BUT Informatique</p>
 				<p class="text-base text-secondary-content">
 					a l'<a class="link" href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
 						>IUT Paul Sabatier</a
@@ -190,9 +190,9 @@
 				</svg>
 			</div>
 			<div
-				class="timeline-end flex flex-col gap-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
+				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg text-primary-content">Premiere annee de CPGE MPI</p>
+				<p class="text-lg text-primary-content font-semibold">Premiere annee de CPGE MPI</p>
 				<p class="text-base text-secondary-content">
 					a la <a
 						class="link"
@@ -235,9 +235,9 @@
 				</svg>
 			</div>
 			<div
-				class="timeline-end flex flex-col gap-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
+				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg text-primary-content">Baccalauréat europeen mention Tres Bien</p>
+				<p class="text-lg text-primary-content font-semibold">Baccalauréat europeen mention Tres Bien</p>
 				<p class="text-base text-secondary-content">au Lycee Saint Joseph - La Salle Toulouse</p>
 
 				<ul class="list bg-base-100">
