@@ -37,7 +37,7 @@
 					<li>
 						<details>
 							<summary>Menu</summary>
-							<ul class="m-0 bg-base-200 text-base-content right-0">
+							<ul class="right-0 m-0 bg-base-200 text-base-content">
 								<li><NavLink href="/" exact={true}>Accueil</NavLink></li>
 								<li><NavLink href="/career">Parcours</NavLink></li>
 								<li><NavLink href="/projects">Projets</NavLink></li>
@@ -53,7 +53,7 @@
 	</div>
 
 	<div class="flex grow justify-center px-4 py-10">
-		<div class="w-full flex flex-col max-w-(--page-width)">
+		<div class="flex w-full max-w-(--page-width) flex-col">
 			{@render children()}
 		</div>
 	</div>
@@ -64,7 +64,7 @@
 			<p>
 				&copy; 2026 Nifle CGE - Tout droits réservés
 				<br />
-				En vie depuis 2005
+				Vivant depuis 2005
 			</p>
 		</aside>
 		<nav>
@@ -74,6 +74,7 @@
 					href="https://github.com/Nifle-CGE"
 					aria-label="Nifle CGE sur GitHub"
 					title="Nifle CGE sur GitHub"
+					target="_blank"
 				>
 					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current">
 						<path
@@ -85,6 +86,7 @@
 					href="https://www.linkedin.com/in/nifle"
 					aria-label="Elfin Pouget - - Pejoan sur LinkedIn"
 					title="Elfin Pouget - - Pejoan sur LinkedIn"
+					target="_blank"
 				>
 					<svg
 						viewBox="0 0 24 24"

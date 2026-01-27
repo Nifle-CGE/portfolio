@@ -20,11 +20,14 @@
 			</div>
 			<div class="timeline-end space-y-2 font-inter text-sm text-neutral-content">
 				<div class="space-y-2 timeline-box bg-base-200">
-					<p class="text-lg text-primary-content font-semibold">Alternance</p>
+					<p class="text-lg font-semibold text-primary-content">Alternance</p>
 					<p class="text-base text-secondary-content">
-						a <a class="link" href="https://sogeclair.com/simulation/simulation-ferroviaire"
-							>Oktal</a
-						>, filiale de <a class="link" href="https://sogeclair.com">Sogeclair</a>, Blagnac
+						a <a
+							class="link"
+							href="https://sogeclair.com/simulation/simulation-ferroviaire"
+							target="_blank">Oktal</a
+						>, filiale de
+						<a class="link" href="https://sogeclair.com" target="_blank">Sogeclair</a>, Blagnac
 					</p>
 
 					<ul class="list bg-base-100">
@@ -47,10 +50,14 @@
 					</div>
 				</div>
 				<div class="space-y-2 timeline-box bg-base-200">
-					<p class="text-lg text-primary-content font-semibold">Troisieme annee de BUT Informatique</p>
+					<p class="text-lg font-semibold text-primary-content">
+						Troisieme annee de BUT Informatique
+					</p>
 					<p class="text-base text-secondary-content">
-						a l'<a class="link" href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
-							>IUT Paul Sabatier</a
+						a l'<a
+							class="link"
+							href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
+							target="_blank">IUT Paul Sabatier</a
 						>, Toulouse
 					</p>
 
@@ -90,10 +97,14 @@
 			<div
 				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg text-primary-content font-semibold">Stage de fin d'annee de BUT2</p>
+				<p class="text-lg font-semibold text-primary-content">Stage de fin d'annee de BUT2</p>
 				<p class="text-base text-secondary-content">
-					a <a class="link" href="https://sogeclair.com/simulation/simulation-ferroviaire">Oktal</a
-					>, filiale de <a class="link" href="https://sogeclair.com">Sogeclair</a>, Blagnac
+					a <a
+						class="link"
+						href="https://sogeclair.com/simulation/simulation-ferroviaire"
+						target="_blank">Oktal</a
+					>, filiale de <a class="link" href="https://sogeclair.com" target="_blank">Sogeclair</a>,
+					Blagnac
 				</p>
 
 				<ul class="list bg-base-100">
@@ -139,10 +150,12 @@
 			<div
 				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg text-primary-content font-semibold">Deuxieme annee de BUT Informatique</p>
+				<p class="text-lg font-semibold text-primary-content">Deuxieme annee de BUT Informatique</p>
 				<p class="text-base text-secondary-content">
-					a l'<a class="link" href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
-						>IUT Paul Sabatier</a
+					a l'<a
+						class="link"
+						href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
+						target="_blank">IUT Paul Sabatier</a
 					>, Toulouse
 				</p>
 
@@ -192,12 +205,12 @@
 			<div
 				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg text-primary-content font-semibold">Premiere annee de CPGE MPI</p>
+				<p class="text-lg font-semibold text-primary-content">Premiere annee de CPGE MPI</p>
 				<p class="text-base text-secondary-content">
 					a la <a
 						class="link"
 						href="https://www.inp-toulouse.fr/fr/formations/la-prepa-des-inp.html"
-						>Prepa t2 (anciennement Prepa des INP)</a
+						target="_blank">Prepa t2 (anciennement Prepa des INP)</a
 					>, Toulouse
 				</p>
 
@@ -237,7 +250,9 @@
 			<div
 				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg text-primary-content font-semibold">Baccalauréat europeen mention Tres Bien</p>
+				<p class="text-lg font-semibold text-primary-content">
+					Baccalauréat europeen mention Tres Bien
+				</p>
 				<p class="text-base text-secondary-content">au Lycee Saint Joseph - La Salle Toulouse</p>
 
 				<ul class="list bg-base-100">

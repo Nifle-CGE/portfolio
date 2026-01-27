@@ -54,8 +54,10 @@
 								Etudiant en <a
 									class="link"
 									href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
-									>BUT Informatique à l'IUT Paul Sabatier</a
-								> à Toulouse
+									target="_blank"
+								>
+									BUT Informatique à l'IUT Paul Sabatier
+								</a> à Toulouse
 							</p>
 						</div>
 
@@ -77,8 +79,10 @@
 							<p class="text-xl">
 								Alternant chez <a
 									class="link"
-									href="https://sogeclair.com/simulation/simulation-ferroviaire">Oktal</a
-								>, filiale de <a class="link" href="https://sogeclair.com">Sogeclair</a>
+									href="https://sogeclair.com/simulation/simulation-ferroviaire"
+									target="_blank">Oktal</a
+								>, filiale de
+								<a class="link" href="https://sogeclair.com" target="_blank">Sogeclair</a>
 							</p>
 						</div>
 
