@@ -1,13 +1,36 @@
 <script lang="ts">
+	import { afterNavigate } from '$app/navigation';
+
 	import gestion_immo_img from '$lib/assets/img/projects/gestion_immo.png';
 	import gestion_sport_img from '$lib/assets/img/projects/hawkey.png';
+
+	afterNavigate(({ to }) => {
+		let hash = to?.url?.hash;
+		if (hash) {
+			const element = document.querySelector(hash);
+			const first_details = document.getElementById('first-details');
+			if (element) {
+				if (first_details && first_details.open) {
+					first_details.open = false;
+				}
+				const details = element.closest('details');
+				if (details && !details.open) {
+					details.open = true;
+				}
+			}
+		}
+	});
 </script>
 
 <div class="flex flex-col items-center gap-6 font-inter">
 	<h2 class="font-grotesk text-3xl font-semibold">Mes Projets</h2>
 
 	<div class="space-y-2">
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200" open>
+		<details
+			id="first-details"
+			class="collapse-arrow collapse border border-base-300 bg-base-200"
+			open
+		>
 			<summary id="rbs" class="collapse-title text-lg font-semibold text-primary-content">
 				RandomBroadcastingSelector
 			</summary>
@@ -27,9 +50,7 @@
 					<div>
 						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
 						<div class="flex flex-col gap-2">
-							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
-								>Realiser</a
-							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills">Realiser</a>
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#optimiser"
 								>Optimiser</a
 							>
@@ -76,7 +97,7 @@
 						</p>
 						<button
 							class="group flex h-25 w-30 cursor-pointer items-center justify-center rounded-md bg-cover bg-center"
-							onclick={img_modal_1.showModal()}
+							onclick={() => img_modal_1.showModal()}
 							style="background-image: url({gestion_immo_img});"
 							aria-label="Aperçu de l'application de gestion immobiliere"
 							title="Aperçu de l'application de gestion immobiliere"
@@ -161,8 +182,12 @@
 					<div>
 						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
 						<div class="flex flex-col gap-2">
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#realiser">Realiser</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#conduire">Conduire</a>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
+								>Realiser</a
+							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#conduire"
+								>Conduire</a
+							>
 						</div>
 					</div>
 				</div>
@@ -214,8 +239,10 @@
 					<div>
 						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
 						<div class="flex flex-col gap-2">
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#optimiser">Optimiser</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#collaborer">
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#optimiser"
+								>Optimiser</a
+							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#collaborer">
 								Collaborer
 							</a>
 						</div>
@@ -242,7 +269,7 @@
 		</details>
 
 		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="gestion_sport" class="collapse-title text-lg font-semibold text-primary-content">
+			<summary id="gestion-sport" class="collapse-title text-lg font-semibold text-primary-content">
 				Site de gestion d'equipe de sport
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -257,7 +284,7 @@
 						</p>
 						<button
 							class="group flex h-25 w-30 cursor-pointer items-center justify-center rounded-md bg-cover bg-center"
-							onclick={img_modal_2.showModal()}
+							onclick={() => img_modal_2.showModal()}
 							style="background-image: url({gestion_sport_img});"
 							aria-label="Aperçu de l'application de gestion immobiliere"
 							title="Aperçu de l'application de gestion immobiliere"
@@ -293,10 +320,14 @@
 					<div>
 						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
 						<div class="flex flex-col gap-2">
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#realiser">Realiser</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#gerer">Gerer</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#conduire">Conduire</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#collaborer">
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
+								>Realiser</a
+							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#gerer">Gerer</a>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#conduire"
+								>Conduire</a
+							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#collaborer">
 								Collaborer
 							</a>
 						</div>
@@ -333,9 +364,13 @@
 					<div>
 						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
 						<div class="flex flex-col gap-2">
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#realiser">Realiser</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#conduire">Conduire</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#collaborer">
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
+								>Realiser</a
+							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#conduire"
+								>Conduire</a
+							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#collaborer">
 								Collaborer
 							</a>
 						</div>
@@ -374,12 +409,16 @@
 					<div>
 						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
 						<div class="flex flex-col gap-2">
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#realiser">Realiser</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#administrer"
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
+								>Realiser</a
+							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#administrer"
 								>Administrer</a
 							>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#conduire">Conduire</a>
-							<a class="badge link badge-lg badge-secondary px-2" href="/skills#collaborer">
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#conduire"
+								>Conduire</a
+							>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#collaborer">
 								Collaborer
 							</a>
 						</div>
