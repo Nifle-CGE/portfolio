@@ -18,21 +18,21 @@
 
 	<div class="flex flex-col gap-4 lg:flex-row">
 		<div class="card bg-base-300">
-			<dir class="card-body space-y-3">
-				<h3 class="card-title text-xl">Coordonnees</h3>
+			<div class="card-body space-y-3">
+				<h3 class="card-title text-xl">Coordonnées</h3>
 				<div>
 					<span class="text-discrete-content">Email</span>
 					<br />
 					<a class="link text-lg" href="mailto:elfin@elfin.fr">elfin@elfin.fr</a>
 				</div>
 				<div>
-					<span class="text-discrete-content">Linkedin</span>
+					<span class="text-discrete-content">LinkedIn</span>
 					<br />
 					<a class="link text-lg" href="https://www.linkedin.com/in/nifle" target="_blank">
 						@nifle
 					</a>
 				</div>
-			</dir>
+			</div>
 		</div>
 		<div class="card w-xs bg-base-300 lg:w-md">
 			<div class="card-body">

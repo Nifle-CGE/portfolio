@@ -8,7 +8,7 @@
 		let hash = to?.url?.hash;
 		if (hash) {
 			const element = document.querySelector(hash);
-			const first_details = document.getElementById('first-details');
+			const first_details = document.getElementById('rbs')?.closest('details');
 			if (element) {
 				if (first_details && first_details.open) {
 					first_details.open = false;
@@ -48,13 +48,13 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Compétences associées</h4>
 						<div class="flex flex-col gap-2">
-							<a class="badge link px-2 badge-lg badge-secondary" href="/skills">Realiser</a>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser">Réaliser</a>
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#optimiser"
 								>Optimiser</a
 							>
-							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#gerer">Gerer</a>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#gerer">Gérer</a>
 						</div>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 
 		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
 			<summary id="gestion-immo" class="collapse-title text-lg font-semibold text-primary-content">
-				Application de gestion immobiliere
+				Application de gestion immobilière
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
 				<div class="flex flex-col lg:flex-row">
@@ -92,15 +92,15 @@
 							Une application de gestion de biens immobiliers réalisée en groupe de 4 dans le cadre
 							du BUT.
 							<br />
-							Cette application permet de gérer des des biens immobiliers, des locataires, des baux et
+							Cette application permet de gérer des biens immobiliers, des locataires, des baux et
 							des travaux associés
 						</p>
 						<button
 							class="group flex h-25 w-30 cursor-pointer items-center justify-center rounded-md bg-cover bg-center"
 							onclick={() => img_modal_1.showModal()}
 							style="background-image: url({gestion_immo_img});"
-							aria-label="Aperçu de l'application de gestion immobiliere"
-							title="Aperçu de l'application de gestion immobiliere"
+							aria-label="Aperçu de l'application de gestion immobilière"
+							title="Aperçu de l'application de gestion immobilière"
 						>
 							<svg
 								class="h-16 w-16 text-transparent transition-colors group-hover:text-white"
@@ -122,7 +122,7 @@
 								<form method="dialog">
 									<button class="btn absolute top-0 right-0 btn-circle btn-ghost btn-sm">✕</button>
 								</form>
-								<img src={gestion_immo_img} alt="Aperçu de l'application de gestion immobiliere" />
+								<img src={gestion_immo_img} alt="Aperçu de l'application de gestion immobilière" />
 							</div>
 							<form method="dialog" class="modal-backdrop">
 								<button>close</button>
@@ -131,12 +131,12 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Compétences associées</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
-								>Realiser</a
+								>Réaliser</a
 							>
-							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#gerer">Gerer</a>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#gerer">Gérer</a>
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#conduire"
 								>Conduire</a
 							>
@@ -168,22 +168,22 @@
 					<div>
 						<h4 class="text-sm text-discrete-content">Description</h4>
 						<p>
-							Decouverte de SvelteKit et TailwindCSS pour ce projet suite a la recommandation d'un <a
+							Découverte de SvelteKit et TailwindCSS pour ce projet suite à la recommandation d'un <a
 								class="link"
 								href="https://portfolio-s6.paillaugue.fr/"
 								target="_blank">ami</a
 							>.
 							<br />
-							Utilisation de l'IA tres limitee, seulement pour me debloquer notamment sur l'utilisation
+							Utilisation de l'IA très limitée, seulement pour me débloquer notamment sur l'utilisation
 							de "flex" en CSS.
 						</p>
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Compétences associées</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
-								>Realiser</a
+								>Réaliser</a
 							>
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#conduire"
 								>Conduire</a
@@ -214,7 +214,7 @@
 				id="algo-genetique"
 				class="collapse-title text-lg font-semibold text-primary-content"
 			>
-				Algorithme genetique
+				Algorithme génétique
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
 				<div class="flex flex-col lg:flex-row">
@@ -223,7 +223,7 @@
 						<p>
 							Un projet d'algorithme génétique réalisé en binôme dans le cadre du BUT.
 							<br />
-							Le problème à résoudre etait celui du
+							Le problème à résoudre était celui du
 							<a
 								class="link"
 								href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_du_voyageur_de_commerce"
@@ -232,12 +232,12 @@
 								voyageur de commerce
 							</a>.
 							<br />
-							Il fallait egalement analyser les performances des différentes configurations de l'algorithme.
+							Il fallait également analyser les performances des différentes configurations de l'algorithme.
 						</p>
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Compétences associées</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#optimiser"
 								>Optimiser</a
@@ -270,14 +270,14 @@
 
 		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
 			<summary id="gestion-sport" class="collapse-title text-lg font-semibold text-primary-content">
-				Site de gestion d'equipe de sport
+				Site de gestion d'équipe de sport
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
 				<div class="flex flex-col lg:flex-row">
 					<div>
 						<h4 class="text-sm text-discrete-content">Description</h4>
 						<p>
-							Une application web de gestion d'equipe de sport réalisée en binôme dans le cadre du
+							Une application web de gestion d'équipe de sport réalisée en binôme dans le cadre du
 							BUT.
 							<br />
 							Ce site permet de gérer des joueurs, des matchs et des statistiques.
@@ -286,8 +286,8 @@
 							class="group flex h-25 w-30 cursor-pointer items-center justify-center rounded-md bg-cover bg-center"
 							onclick={() => img_modal_2.showModal()}
 							style="background-image: url({gestion_sport_img});"
-							aria-label="Aperçu de l'application de gestion immobiliere"
-							title="Aperçu de l'application de gestion immobiliere"
+							aria-label="Aperçu de l'application de gestion immobilière"
+							title="Aperçu de l'application de gestion immobilière"
 						>
 							<svg
 								class="h-16 w-16 text-transparent transition-colors group-hover:text-white"
@@ -309,7 +309,7 @@
 								<form method="dialog">
 									<button class="btn absolute top-0 right-0 btn-circle btn-ghost btn-sm">✕</button>
 								</form>
-								<img src={gestion_sport_img} alt="Aperçu de l'application de gestion immobiliere" />
+								<img src={gestion_sport_img} alt="Aperçu de l'application de gestion immobilière" />
 							</div>
 							<form method="dialog" class="modal-backdrop">
 								<button>close</button>
@@ -318,12 +318,12 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Compétences associées</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
-								>Realiser</a
+								>Réaliser</a
 							>
-							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#gerer">Gerer</a>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#gerer">Gérer</a>
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#conduire"
 								>Conduire</a
 							>
@@ -355,17 +355,17 @@
 					<div>
 						<h4 class="text-sm text-discrete-content">Description</h4>
 						<p>
-							Un journal de trading réalisée en binôme dans le cadre du BUT.
+							Un journal de trading réalisé en binôme dans le cadre du BUT.
 							<br />
 							Elle permet aux traders de suivre leurs performances et d'analyser leurs résultats.
 						</p>
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Compétences associées</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
-								>Realiser</a
+								>Réaliser</a
 							>
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#conduire"
 								>Conduire</a
@@ -407,10 +407,10 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Competences associees</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Compétences associées</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
-								>Realiser</a
+								>Réaliser</a
 							>
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#administrer"
 								>Administrer</a
@@ -447,13 +447,13 @@
 				<div>
 					<h4 class="text-sm text-discrete-content">Description</h4>
 					<p>
-						Pas du tout un site web ou une application, mais un jeu de societe cree entierement par
+						Pas du tout un site web ou une application, mais un jeu de société créé entièrement par
 						moi.
 						<br />
 						Ze Zone est un jeu de plateau dans lequel les joueurs s'affrontent dans un milieu qui devient
-						de plus en plus difficile a naviguer au fur et a mesure que la partie avance.
+						de plus en plus difficile à naviguer au fur et à mesure que la partie avance.
 						<br />
-						En vente en ligne sur le site ci-dessous ou en personne lors d'evenements.
+						En vente en ligne sur le site ci-dessous ou en personne lors d'événements.
 					</p>
 				</div>
 				<div class="flex flex-row justify-between">
@@ -461,7 +461,7 @@
 						<span class="badge px-2 badge-md badge-accent">Onshape</span>
 						<span class="badge px-2 badge-md badge-accent">Impression 3D</span>
 						<span class="badge px-2 badge-md badge-accent">Vente en personne</span>
-						<span class="badge px-2 badge-md badge-accent">Explication de regles</span>
+						<span class="badge px-2 badge-md badge-accent">Explication de règles</span>
 					</div>
 					<div>
 						<a class="link" href="https://games.a-zuga.com/ze-zone" target="_blank">

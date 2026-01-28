@@ -5,7 +5,7 @@
 		let hash = to?.url?.hash;
 		if (hash) {
 			const element = document.querySelector(hash);
-			const first_details = document.getElementById('first-details');
+			const first_details = document.getElementById('realiser')?.closest('details');
 			if (element) {
 				if (first_details && first_details.open) {
 					first_details.open = false;
@@ -20,7 +20,7 @@
 </script>
 
 <div class="flex flex-col items-center gap-6 font-inter">
-	<h2 class="font-grotesk text-3xl font-semibold">Mes Competences</h2>
+	<h2 class="font-grotesk text-3xl font-semibold">Mes Compétences</h2>
 
 	<div class="space-y-2">
 		<details
@@ -69,19 +69,19 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Projets associes</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Projets associés</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#rbs">
 								RandomBroadcastingSelector
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#gestion-immo">
-								App de gestion immobiliere
+								App de gestion immobilière
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#portfolio">
 								Ce portfolio
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#gestion-sport">
-								Gestion d'equipe de sport
+								Gestion d'équipe de sport
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#loottracker">
 								App mobile de trading
@@ -138,13 +138,13 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Projets associes</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Projets associés</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#rbs">
 								RandomBroadcastingSelector
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#algo-genetique">
-								Algorithme genetique
+								Algorithme génétique
 							</a>
 						</div>
 					</div>
@@ -189,7 +189,7 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Projets associes</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Projets associés</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#bombochat">
 								Bombochat
@@ -238,16 +238,16 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Projets associes</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Projets associés</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#rbs">
 								RandomBroadcastingSelector
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#gestion-immo">
-								App de gestion immobiliere
+								App de gestion immobilière
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#gestion-sport">
-								Gestion d'equipe de sport
+								Gestion d'équipe de sport
 							</a>
 						</div>
 					</div>
@@ -296,16 +296,16 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Projets associes</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Projets associés</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#gestion-immo">
-								App de gestion immobiliere
+								App de gestion immobilière
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#portfolio">
 								Ce portfolio
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#gestion-sport">
-								Gestion d'equipe de sport
+								Gestion d'équipe de sport
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#loottracker">
 								App mobile de trading
@@ -359,16 +359,16 @@
 					</div>
 					<div class="divider lg:divider-horizontal"></div>
 					<div>
-						<h4 class="pb-2 text-sm text-discrete-content">Projets associes</h4>
+						<h4 class="pb-2 text-sm text-discrete-content">Projets associés</h4>
 						<div class="flex flex-col gap-2">
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#gestion-immo">
-								App de gestion immobiliere
+								App de gestion immobilière
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#algo-genetique">
-								Algorithme genetique
+								Algorithme génétique
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#gestion-sport">
-								Gestion d'equipe de sport
+								Gestion d'équipe de sport
 							</a>
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#loottracker">
 								App mobile de trading

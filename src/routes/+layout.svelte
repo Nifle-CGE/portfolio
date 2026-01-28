@@ -62,7 +62,7 @@
 		<aside>
 			<img class="h-12 w-12" src={nifle_logo} alt="" />
 			<p>
-				&copy; 2026 Nifle CGE - Tout droits réservés
+				&copy; 2026 Nifle CGE - Tous droits réservés
 				<br />
 				Vivant depuis 2005
 			</p>

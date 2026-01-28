@@ -22,7 +22,7 @@
 				<div class="space-y-2 timeline-box bg-base-200">
 					<p class="text-lg font-semibold text-primary-content">Alternance</p>
 					<p class="text-base text-secondary-content">
-						a <a
+						à <a
 							class="link"
 							href="https://sogeclair.com/simulation/simulation-ferroviaire"
 							target="_blank">Oktal</a
@@ -32,13 +32,13 @@
 
 					<ul class="list bg-base-100">
 						<li class="list-row p-3">
-							Taches de recherche et developpement pour l'orchestration de tests automatises
+							Tâches de recherche et développement pour l'orchestration de tests automatisés
 						</li>
 						<li class="list-row p-3">
 							Prise en compte du feedback des utilisateurs pour un outil interne
 						</li>
 						<li class="list-row p-3">
-							Utilisation reguliere de l'anglais technique avec les equipes internationales
+							Utilisation régulière de l'anglais technique avec les équipes internationales
 						</li>
 					</ul>
 
@@ -51,10 +51,10 @@
 				</div>
 				<div class="space-y-2 timeline-box bg-base-200">
 					<p class="text-lg font-semibold text-primary-content">
-						Troisieme annee de BUT Informatique
+						Troisième année de BUT Informatique
 					</p>
 					<p class="text-base text-secondary-content">
-						a l'<a
+						à l'<a
 							class="link"
 							href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
 							target="_blank">IUT Paul Sabatier</a
@@ -63,7 +63,7 @@
 
 					<ul class="list bg-base-100">
 						<li class="list-row p-3">
-							Specialite réalisation d'applications : conception, développement, validation
+							Spécialité réalisation d'applications : conception, développement, validation
 						</li>
 					</ul>
 
@@ -97,9 +97,9 @@
 			<div
 				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg font-semibold text-primary-content">Stage de fin d'annee de BUT2</p>
+				<p class="text-lg font-semibold text-primary-content">Stage de fin d'année de BUT2</p>
 				<p class="text-base text-secondary-content">
-					a <a
+					à <a
 						class="link"
 						href="https://sogeclair.com/simulation/simulation-ferroviaire"
 						target="_blank">Oktal</a
@@ -112,7 +112,7 @@
 						Apprentissage de la gestion de documentation en entreprise (Confluence, Jira)
 					</li>
 					<li class="list-row p-3">
-						Elaboration de scenarios de tests automatises pour des simulateurs ferroviaires
+						Elaboration de scénarios de tests automatisés pour des simulateurs ferroviaires
 					</li>
 					<li class="list-row p-3">
 						Application de techniques de gestion de projet (Agile, Scrum)
@@ -150,9 +150,9 @@
 			<div
 				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg font-semibold text-primary-content">Deuxieme annee de BUT Informatique</p>
+				<p class="text-lg font-semibold text-primary-content">Deuxième année de BUT Informatique</p>
 				<p class="text-base text-secondary-content">
-					a l'<a
+					à l'<a
 						class="link"
 						href="https://iut.univ-tlse3.fr/bachelor-specialite-informatique"
 						target="_blank">IUT Paul Sabatier</a
@@ -161,11 +161,11 @@
 
 				<ul class="list bg-base-100">
 					<li class="list-row p-3">
-						Specialite réalisation d'applications : conception, développement, validation
+						Spécialité réalisation d'applications : conception, développement, validation
 					</li>
 					<li class="list-row p-3">
 						<p>
-							Beaucoup de <a class="link" href="/projects">projets</a> avec des themes divers et varies
+							Beaucoup de <a class="link" href="/projects">projets</a> avec des thèmes divers et variés
 						</p>
 					</li>
 					<li class="list-row p-3">
@@ -205,19 +205,19 @@
 			<div
 				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
-				<p class="text-lg font-semibold text-primary-content">Premiere annee de CPGE MPI</p>
+				<p class="text-lg font-semibold text-primary-content">Première année de CPGE MPI</p>
 				<p class="text-base text-secondary-content">
-					a la <a
+					à la <a
 						class="link"
 						href="https://www.inp-toulouse.fr/fr/formations/la-prepa-des-inp.html"
-						target="_blank">Prepa t2 (anciennement Prepa des INP)</a
+						target="_blank">Prépa t2 (anciennement Prépa des INP)</a
 					>, Toulouse
 				</p>
 
 				<ul class="list bg-base-100">
-					<li class="list-row p-3">Surtout des projets informatiques liés aux mathematiques</li>
+					<li class="list-row p-3">Surtout des projets informatiques liés aux mathématiques</li>
 					<li class="list-row p-3">
-						C'est pendant cette annee que je me rends compte que je veux me concentrer sur
+						C'est pendant cette année que je me rends compte que je veux me concentrer sur
 						l'informatique
 					</li>
 				</ul>
@@ -251,15 +251,15 @@
 				class="timeline-end space-y-2 timeline-box bg-base-200 font-inter text-sm text-neutral-content"
 			>
 				<p class="text-lg font-semibold text-primary-content">
-					Baccalauréat europeen mention Tres Bien
+					Baccalauréat européen mention Très Bien
 				</p>
-				<p class="text-base text-secondary-content">au Lycee Saint Joseph - La Salle Toulouse</p>
+				<p class="text-base text-secondary-content">au Lycée Saint Joseph - La Salle Toulouse</p>
 
 				<ul class="list bg-base-100">
-					<li class="list-row p-3">Spécialités Mathematiques, Informatique et Physique Chimie</li>
-					<li class="list-row p-3">Debut de ma passion pour l'informatique</li>
+					<li class="list-row p-3">Spécialités Mathématiques, Informatique et Physique Chimie</li>
+					<li class="list-row p-3">Début de ma passion pour l'informatique</li>
 					<li class="list-row p-3">
-						<p>Je realise le projet personnel <a class="link" href="/projects#rbs">RBS</a></p>
+						<p>Je réalise le projet personnel <a class="link" href="/projects#rbs">RBS</a></p>
 					</li>
 				</ul>
 

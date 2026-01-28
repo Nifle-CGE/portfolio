@@ -109,7 +109,7 @@
 								/>
 							</svg>
 
-							<p class="text-xl">Passionné par le numerique, les jeux videos et l'impression 3D</p>
+							<p class="text-xl">Passionné par le numérique, les jeux vidéos et l'impression 3D</p>
 						</div>
 					</div>
 				</div>
@@ -160,7 +160,7 @@
 					</svg>
 					<div class="card-title font-grotesk text-2xl">Projets</div>
 					<p class="font-inter text-lg">
-						Vous trouverez une liste non exaustive des projets que j'ai réalisé ou auxquels j'ai
+						Vous trouverez une liste non exhaustive des projets que j'ai réalisé ou auxquels j'ai
 						participé en suivant ce <a class="link font-bold hover:animate-rainbow" href="/projects"
 							>lien</a
 						>.
