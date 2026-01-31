@@ -5,7 +5,7 @@
 
 	import favicon from '$lib/assets/img/icons/favicon.png';
 	import nifle_logo from '$lib/assets/img/icons/logo_nifle_transparent.png';
-	import bg0 from '$lib/assets/img/bg0.png';
+	import bg0 from '$lib/assets/img/bg/bg0.png';
 
 	let { children } = $props();
 </script>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import avatar from '$lib/assets/img/avatar.png';
-	import bg2 from '$lib/assets/img/bg2.png';
-	import bg4 from '$lib/assets/img/bg4.png';
+	import bg2 from '$lib/assets/img/bg/bg2.png';
+	import bg4 from '$lib/assets/img/bg/bg4.png';
 </script>
 
 <div class="flex flex-col items-center gap-6">
