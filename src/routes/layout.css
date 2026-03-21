@@ -1,8 +1,8 @@
-@import url('$lib/clash-grotesk.css');
-@import url('$lib/dm-sans.css');
-@import url('$lib/inter.css');
-@import url('$lib/merriweather.css');
-@import url('$lib/oxygen-mono.css');
+@import url('$lib/fonts/clash-grotesk.css');
+@import url('$lib/fonts/dm-sans.css');
+@import url('$lib/fonts/inter.css');
+@import url('$lib/fonts/merriweather.css');
+@import url('$lib/fonts/oxygen-mono.css');
 
 @import 'tailwindcss';
 @plugin "daisyui";
