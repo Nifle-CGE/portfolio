@@ -17,5 +17,8 @@
 	"route": {
 		"pattern": "elfin.fr",
 		"custom_domain": true
+	},
+	"build": {
+		"command": "bun build",
 	}
 }
