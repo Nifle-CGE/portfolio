@@ -161,7 +161,7 @@
 					<div class="card-title font-grotesk text-2xl">Projets</div>
 					<p class="font-inter text-lg">
 						Vous trouverez une liste non exhaustive des projets que j'ai réalisé ou auxquels j'ai
-						participé en suivant ce <a class="link font-bold hover:animate-rainbow" href="/projects"
+						participé en suivant ce <a class="link font-bold hover:animate-rainbow-text" href="/projects"
 							>lien</a
 						>.
 					</p>

@@ -1,34 +1,27 @@
-<script>
-	import { afterNavigate } from '$app/navigation';
+<script lang="ts">
+	import { onMount } from 'svelte';
 
-	afterNavigate(({ to }) => {
-		let hash = to?.url?.hash;
-		if (hash) {
-			const element = document.querySelector(hash);
-			const first_details = document.getElementById('realiser')?.closest('details');
-			if (element) {
-				if (first_details && first_details.open) {
-					first_details.open = false;
-				}
-				const details = element.closest('details');
-				if (details && !details.open) {
-					details.open = true;
-				}
-			}
-		}
+	onMount(() => {
+		let hash = window.location.hash;
+		if (hash === '') hash = '#realiser';
+
+		const details = document.querySelector<HTMLDetailsElement>(hash);
+		if (details) details.open = true;
 	});
+
+	let { data } = $props();
 </script>
+
+<svelte:head>
+	<title>Portfolio d'Elfin Pouget - - Pejoan - Compétences</title>
+</svelte:head>
 
 <div class="flex flex-col items-center gap-6 font-inter">
 	<h2 class="font-grotesk text-3xl font-semibold">Mes Compétences</h2>
 
 	<div class="space-y-2">
-		<details
-			id="first-details"
-			class="collapse-arrow collapse border border-base-300 bg-base-200"
-			open
-		>
-			<summary id="realiser" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="realiser" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Réaliser
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -95,8 +88,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="optimiser" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="optimiser" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Optimiser
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -152,8 +145,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="administrer" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="administrer" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Administrer
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -200,10 +193,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="gerer" class="collapse-title text-lg font-semibold text-primary-content">
-				Gérer
-			</summary>
+		<details id="gerer" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content"> Gérer </summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
 				<div class="flex flex-col lg:flex-row">
 					<div class="space-y-2">
@@ -255,8 +246,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="conduire" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="conduire" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Conduire
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -313,14 +304,19 @@
 							<a class="badge link px-2 badge-lg badge-primary" href="/projects#bombochat">
 								Bombochat
 							</a>
+							{#if data.showEntry}
+								<a class="badge animate-rainbow-bg link px-2 badge-lg" href="/projects/truth">
+									Truth
+								</a>
+							{/if}
 						</div>
 					</div>
 				</div>
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="collaborer" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="collaborer" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Collaborer
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">

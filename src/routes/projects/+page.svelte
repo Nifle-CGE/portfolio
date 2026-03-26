@@ -1,37 +1,29 @@
 <script lang="ts">
-	import { afterNavigate } from '$app/navigation';
+	import { onMount } from 'svelte';
 
-	import gestion_immo_img from '$lib/assets/img/projects/gestion_immo.png';
-	import gestion_sport_img from '$lib/assets/img/projects/hawkey.png';
+	import gestionImmoImg from '$lib/assets/img/projects/gestion_immo.png';
+	import gestionSportImg from '$lib/assets/img/projects/hawkey.png';
+	import leijacImg from '$lib/assets/img/icons/Leijac.svg';
 
-	afterNavigate(({ to }) => {
-		let hash = to?.url?.hash;
-		if (hash) {
-			const element = document.querySelector(hash);
-			const first_details = document.getElementById('rbs')?.closest('details');
-			if (element) {
-				if (first_details && first_details.open) {
-					first_details.open = false;
-				}
-				const details = element.closest('details');
-				if (details && !details.open) {
-					details.open = true;
-				}
-			}
-		}
+	onMount(() => {
+		let hash = window.location.hash;
+		if (hash === '') hash = '#rbs';
+
+		const details = document.querySelector<HTMLDetailsElement>(hash);
+		if (details) details.open = true;
 	});
 </script>
+
+<svelte:head>
+	<title>Portfolio d'Elfin Pouget - - Pejoan - Projets</title>
+</svelte:head>
 
 <div class="flex flex-col items-center gap-6 font-inter">
 	<h2 class="font-grotesk text-3xl font-semibold">Mes Projets</h2>
 
 	<div class="space-y-2">
-		<details
-			id="first-details"
-			class="collapse-arrow collapse border border-base-300 bg-base-200"
-			open
-		>
-			<summary id="rbs" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="rbs" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				RandomBroadcastingSelector
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -50,7 +42,9 @@
 					<div>
 						<h4 class="pb-2 text-sm text-discrete-content">Compétences associées</h4>
 						<div class="flex flex-col gap-2">
-							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser">Réaliser</a>
+							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#realiser"
+								>Réaliser</a
+							>
 							<a class="badge link px-2 badge-lg badge-secondary" href="/skills#optimiser"
 								>Optimiser</a
 							>
@@ -80,8 +74,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="gestion-immo" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="gestion-immo" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Application de gestion immobilière
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -92,13 +86,13 @@
 							Une application de gestion de biens immobiliers réalisée en groupe de 4 dans le cadre
 							du BUT.
 							<br />
-							Cette application permet de gérer des biens immobiliers, des locataires, des baux et
-							des travaux associés
+							Cette application permet de gérer des biens immobiliers, des locataires, des baux et des
+							travaux associés
 						</p>
 						<button
 							class="group flex h-25 w-30 cursor-pointer items-center justify-center rounded-md bg-cover bg-center"
 							onclick={() => img_modal_1.showModal()}
-							style="background-image: url({gestion_immo_img});"
+							style="background-image: url({gestionImmoImg});"
 							aria-label="Aperçu de l'application de gestion immobilière"
 							title="Aperçu de l'application de gestion immobilière"
 						>
@@ -122,7 +116,7 @@
 								<form method="dialog">
 									<button class="btn absolute top-0 right-0 btn-circle btn-ghost btn-sm">✕</button>
 								</form>
-								<img src={gestion_immo_img} alt="Aperçu de l'application de gestion immobilière" />
+								<img src={gestionImmoImg} alt="Aperçu de l'application de gestion immobilière" />
 							</div>
 							<form method="dialog" class="modal-backdrop">
 								<button>close</button>
@@ -159,8 +153,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="portfolio" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="portfolio" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Ce portfolio
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -198,6 +192,9 @@
 						<span class="badge px-2 badge-md badge-accent">Responsive</span>
 						<span class="badge px-2 badge-md badge-accent">TailwindCSS</span>
 						<span class="badge px-2 badge-md badge-accent">daisyUI</span>
+						<span class="badge px-2 badge-md"
+							><img src={leijacImg} alt="Leijac logo" class="h-4 w-4" /></span
+						>
 					</div>
 					<div>
 						<a class="link" href="https://elfin.fr/" target="_blank">Site web &nearrow;</a>
@@ -209,11 +206,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary
-				id="algo-genetique"
-				class="collapse-title text-lg font-semibold text-primary-content"
-			>
+		<details id="algo-genetique" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Algorithme génétique
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -268,8 +262,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="gestion-sport" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="gestion-sport" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Site de gestion d'équipe de sport
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -285,12 +279,12 @@
 						<button
 							class="group flex h-25 w-30 cursor-pointer items-center justify-center rounded-md bg-cover bg-center"
 							onclick={() => img_modal_2.showModal()}
-							style="background-image: url({gestion_sport_img});"
+							style="background-image: url({gestionSportImg});"
 							aria-label="Aperçu de l'application de gestion immobilière"
 							title="Aperçu de l'application de gestion immobilière"
 						>
 							<svg
-								class="h-16 w-16 text-transparent transition-colors group-hover:text-white"
+								class="h-16 w-16 text-transparent transition-colors group-hover:text-black"
 								viewBox="0 0 24 24"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
@@ -309,7 +303,7 @@
 								<form method="dialog">
 									<button class="btn absolute top-0 right-0 btn-circle btn-ghost btn-sm">✕</button>
 								</form>
-								<img src={gestion_sport_img} alt="Aperçu de l'application de gestion immobilière" />
+								<img src={gestionSportImg} alt="Aperçu de l'application de gestion immobilière" />
 							</div>
 							<form method="dialog" class="modal-backdrop">
 								<button>close</button>
@@ -346,8 +340,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="loottracker" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="loottracker" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Application mobile journal de trading
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -388,8 +382,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="bombochat" class="collapse-title text-lg font-semibold text-primary-content">
+		<details id="bombochat" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content">
 				Bombochat
 			</summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
@@ -439,10 +433,8 @@
 			</div>
 		</details>
 
-		<details class="collapse-arrow collapse border border-base-300 bg-base-200">
-			<summary id="ze-zone" class="collapse-title text-lg font-semibold text-primary-content">
-				Ze Zone
-			</summary>
+		<details id="ze-zone" class="collapse-arrow collapse border border-base-300 bg-base-200">
+			<summary class="collapse-title text-lg font-semibold text-primary-content"> Ze Zone </summary>
 			<div class="collapse-content space-y-3 border-t-2 border-base-content/10 pt-2">
 				<div>
 					<h4 class="text-sm text-discrete-content">Description</h4>

@@ -1,11 +1,49 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	import './layout.css';
 
 	import NavLink from '$lib/components/NavLink.svelte';
 
 	import favicon from '$lib/assets/img/icons/favicon.png';
-	import nifle_logo from '$lib/assets/img/icons/logo_nifle_transparent.png';
+	import nifleLogo from '$lib/assets/img/icons/logo_nifle_transparent.png';
 	import bg0 from '$lib/assets/img/bg/bg0.png';
+
+	const KEYCODES = [
+		'ArrowUp',
+		'ArrowUp',
+		'ArrowDown',
+		'ArrowDown',
+		'ArrowLeft',
+		'ArrowRight',
+		'ArrowLeft',
+		'ArrowRight',
+		'KeyB',
+		'KeyA'
+	];
+
+	let keyIndex = 0;
+	const keyHandler = async (ev: KeyboardEvent) => {
+		if (!ev.key) return;
+
+		if (KEYCODES[keyIndex] === ev.code) {
+			keyIndex++;
+			if (keyIndex === KEYCODES.length) {
+				await fetch('/api/show-entry/toggle', {
+					method: 'POST',
+					credentials: 'include'
+				});
+				keyIndex = 0;
+			}
+		} else {
+			keyIndex = ev.code === KEYCODES[0] ? 1 : 0;
+		}
+	};
+
+	onMount(() => {
+		window.addEventListener('keydown', keyHandler);
+		return () => window.removeEventListener('keydown', keyHandler);
+	});
 
 	let { children } = $props();
 </script>
@@ -60,7 +98,7 @@
 
 	<footer class="footer bg-neutral p-10 text-neutral-content sm:footer-horizontal">
 		<aside>
-			<img class="h-12 w-12" src={nifle_logo} alt="" />
+			<img class="h-12 w-12" src={nifleLogo} alt="" />
 			<p>
 				&copy; 2026 Nifle CGE - Tous droits réservés
 				<br />
@@ -110,6 +148,7 @@
 						/>
 					</svg>
 				</a>
+				<iframe src="//incr.easrng.net/badge?key=nifle_cge" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
 			</div>
 		</nav>
 	</footer>

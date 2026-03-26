@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Portfolio d'Elfin Pouget - - Pejoan - Parcours</title>
+</svelte:head>
+
 <div class="flex flex-col items-center gap-6">
 	<h2 class="font-grotesk text-3xl font-semibold">Mon Parcours</h2>
 
