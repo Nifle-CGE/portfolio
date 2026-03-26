@@ -19,6 +19,6 @@
 		"custom_domain": true
 	},
 	"build": {
-		"command": "bun build",
+		"command": "bun run build",
 	}
 }
